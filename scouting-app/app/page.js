@@ -1,3 +1,18 @@
+
 export default function Page() {
-  return <h1>Hello, world</h1>
+  return (
+    
+<body>
+      <h1>Start</h1>
+      <h2>Team #</h2>
+      <div>
+      <input></input>
+      </div>
+     
+      <button>Next</button>
+
+      </body>
+
+    
+  )
 }
