@@ -1,18 +1,17 @@
+function submitResults(event) {
+  let all = document.getElementsByTagName("*");
+  let inputs = [];
+  let results = [];
 
-export default function Page() {
-  return (
-    
-<body>
-      <h1>Start</h1>
-      <h2>Team #</h2>
-      <div>
-      <input></input>
-      </div>
-     
-      <button>Next</button>
+  for (let i=0, max=all.length; i < max; i++) {
+      if (all[i].nodeName === "INPUT") {
+          inputs.push(all[i]);
+      }
+  }
 
-      </body>
-
-    
-  )
+  for (let i = 0, max = inputs.length; i < max; i++) {
+      results.push(inputs[i].value);
+  }
 }
+
+document.getElementById("endOfForm").addEventListener('click', submitResults);
