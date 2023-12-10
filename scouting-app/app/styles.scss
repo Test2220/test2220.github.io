@@ -92,3 +92,51 @@ button {
 input {
     height: 1rem;
 }
+
+$bg-color:	rgb(30, 30, 30);
+$scrollbar-color: linear-gradient(#DE0100, #9f0045);
+$scrollbar-hover: linear-gradient(#b90202, #940342);
+$scrollbar-active: linear-gradient(#a40101, #7e0238);
+
+::-webkit-scrollbar {
+    width: 13px;
+}
+
+::-webkit-scrollbar-track {
+    background: $bg-color;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $scrollbar-color;
+    border-radius: 10px;
+    &:hover {
+        background: $scrollbar-hover;
+    }
+    &:active {
+        background: $scrollbar-active;
+    }
+}
+
+$indicator-color: linear-gradient(#DE0100, #b2004c);
+$indicator-bg: rgb(30, 30, 30);
+
+@mixin topSticky() {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.progress-container {
+    width: 100%;
+    height: 10px;
+    background: $indicator-bg;
+    @include topSticky();
+    .progress-bar {
+        height: 10px;
+        border-radius: 10px;
+        background: $indicator-color;
+        width: 0%;
+        @include topSticky();
+    }
+}
