@@ -1,18 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="manifest" href="manifest.json" />
-    <script src="index.js" defer></script>
-    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="globals.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Varela+Round&display=swap" rel="stylesheet">    
     <title>Document</title>
 </head>
-<body>
-    <h1>Hello</h1>
-    <input maxlength = 4 placeholder = "Team #" type="text" id = "teamNumber">
-    <input placeholder = "Final Score" type="text" id = "finalScore">
-    <input placeholder = "Did the team win?" type="checkbox" id = "win">
-
-    <button id="endOfForm">Submit Results</button>
-</body>
+    <body>
+        <h1>Scouting App</h1>
+        <h2>Team #</h2>
+        <div>
+            <input type="number" name="team_num" title="Team #" required maxlength="4">
+        </div>
+        <div>
+            <h1>Auto</h1>
+            <div>
+                <h2>Cones scored on top</h2>
+                <button>-</button>
+                <input></input>
+                <button>+</button>
+            </div>
+            <div>
+                <h2>Cubes scored on top</h2>
+                <button>-</button>
+                <input></input>
+                <button>+</button>
+            </div>
+            <h2>Balanced?</h2>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div>
+            <h1>Tele Op</h1>
+            <div>
+                <h2>Cones scored on top</h2>
+                <button>-</button>
+                <input></input>
+                <button>+</button>
+            </div>
+            <div>
+                <h2>Cubes scored on top</h2>
+                <button>-</button>
+                <input></input>
+                <button>+</button>
+            </div>
+            <h2>Balanced?</h2>  
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div>
+            <h1>Additional Notes</h1>
+            <input></input>
+            <div>
+                <button>Submit</button>
+            </div>
+            
+        </div>
+    </body>
 </html>
-

@@ -28,17 +28,6 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-button  {
-  background-color: #1d79ff;
-  text-align: center;
-  width: 200px;
-  height: 50px;
-  font-size: 50px;
-  padding: 0px 0px;
-  border-radius: 15px;
-  line-height: 50px;
-}
-
 input {
   border-radius: 15px;
   text-align: center;
