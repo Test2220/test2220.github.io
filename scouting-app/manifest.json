@@ -1,0 +1,13 @@
+{
+    "name": "Scout 2220",
+    "display": "fullscreen",
+    "icons": [
+        {
+          "src": "Scout2220.png",
+          "type": "image/png",
+          "sizes": "512x512"
+        }
+    ],
+    "start_url": "https://test2220.github.io"
+}
+  
