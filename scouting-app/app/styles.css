@@ -84,4 +84,43 @@ input:checked + .slider:before {
 
 input {
   height: 1rem;
+}
+
+::-webkit-scrollbar {
+  width: 13px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(30, 30, 30);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#DE0100, #9f0045);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(#b90202, #940342);
+}
+::-webkit-scrollbar-thumb:active {
+  background: linear-gradient(#a40101, #7e0238);
+}
+
+.progress-container {
+  width: 100%;
+  height: 10px;
+  background: rgb(30, 30, 30);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+.progress-container .progress-bar {
+  height: 10px;
+  border-radius: 10px;
+  background: linear-gradient(#DE0100, #b2004c);
+  width: 0%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
 }/*# sourceMappingURL=styles.css.map */
