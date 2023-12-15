@@ -14,6 +14,7 @@ function submitResults(event) {
 
     for (let i = 0, max = inputs.length; i < max; i++) {
         results.push(inputs[i].value);
+        inputs[i].value = "";
     }
   
     const key = Math.random();
