@@ -1,4 +1,4 @@
-let keys = [];
+
 
 function submitResults(event) {
    
@@ -17,21 +17,21 @@ function submitResults(event) {
         inputs[i].value = "";
     }
   
-    const key = Math.random();
-    keys.push(key);
-    localStorage.setItem(key, results);
+    let saved = localStorage.getItem("Saved-Results");
+    if (Array.isArray(saved)) {
+        saved.push(results);
+    } else {
+        saved = [];
+        saved.push(results);
+    }
+    localStorage.setItem("Saved-Results", saved);
 }
 
 function logResults() {
-    let items = [];
-   
-    for (i = 0, max = keys.length; i < max; i++) {
-        const item = localStorage.getItem(keys[i]);
-        items.push(item);
+    let item = localStorage.getItem("Saved-Results")
+    if (item) {
+        console.log(item);
     }
-
-    console.log(items);
-    keys = [];
 }
 
 document.getElementById("endOfForm").addEventListener('click', submitResults);
