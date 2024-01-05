@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="globals.css">
     <link rel="stylesheet" href="styles.css">
     <script src="./scroll-indicator.js" defer></script> 
-    <script src="./index.js" defer></script>
+    <script src="./index.js"  type="module" defer></script>
     <script src="./button.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +21,7 @@
         <h1>Scout 2220</h1>
         <h2>Team #</h2>
         <div>
-            <input placeholder="Team #" name="team_num" title="Team #" maxlength=4>
+            <input placeholder="0000" name="team_num" title="Team #" maxlength=4>
         </div>
         <div>
             <h1>Auto</h1>
@@ -65,7 +65,7 @@
         </div>
         <div>
             <h1>Additional Notes</h1>
-            <input placeholder="Notes"></input>
+            <textarea placeholder="Type any additional notes here" style="font-size:35px;" rows=5" cols="45"></textarea>
             <div>
                 <button id="endOfForm">Submit</button>
                 

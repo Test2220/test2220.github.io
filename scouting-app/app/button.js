@@ -51,5 +51,4 @@ function loaded() {
     }
 }
 
-console.log("Hello")
 
