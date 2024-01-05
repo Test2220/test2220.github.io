@@ -11,4 +11,6 @@ After installing the above
 - Go to 'localhost:3000' in your browser
 
 ### Use the online site
-- Go to https://test2220.github.io
+- Go to https://test2220.github.io/scouting-app/app/index.html
+
+Do not close the online site tab as this may delete results.
