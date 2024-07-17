@@ -31,15 +31,6 @@ function submitResults(event) {
         results[inputs[i].id] = inputs[i].value;
     }
 
-    const filePath = path.join('../../../', 'results.txt')
-    fs.writeFileSync(filePath, JSON.stringify(results), (err) => {
-        if (err) {
-            console.error('Error writing file: ', err)
-        } else {
-            console.log('File created successfully')
-        }
-    })
-
     if (isArray(savedResults)) {
         console.log("array is array")
         console.log(JSON.stringify(results))
