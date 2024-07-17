@@ -110,29 +110,5 @@ for (i = 0; i < coll.length; i++) {
     });
 }
 
-const textAreaElement = document.querySelector("#Notes")
-const characterCounterElement = document.querySelector("#character-counter")
-const typedCharactersElement = document.querySelector("#typed-characters")
-const maximumCharacters = 100
-
-textAreaElement.addEventListener("keyup", (event) => {
-    const typedCharacters = textAreaElement.value.length
-    
-    typedCharactersElement.textContent = maximumCharacters - typedCharacters;
-    if (typedCharacters >= 80 && typedCharacters < 100) {
-        textAreaElement.classList = "text-warning"
-        console.log("warning")
-    } else if (typedCharacters >= 100) {
-        textAreaElement.classList = "text-danger"
-        console.log("danger")
-    } else {
-        textAreaElement.classList = "text-fine"
-    }
-
-    if (typedCharacters > maximumCharacters) {
-        return false;
-    }
-});
-
 document.getElementById("endOfForm").addEventListener('click', submitResults)
 document.getElementById("clearForm").addEventListener('click', clearForm)
