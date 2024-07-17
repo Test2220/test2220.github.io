@@ -1,3 +1,6 @@
+import * as fs from 'fs'
+import * as path from 'path'
+
 
 let savedResults = [];
 // localStorage.removeItem("Saved-Results");
@@ -28,8 +31,14 @@ function submitResults(event) {
         results[inputs[i].id] = inputs[i].value;
     }
 
-    console.log(results)
-    generateQRCode(JSON.stringify(results))
+    const filePath = path.join('../../../', 'results.txt')
+    fs.writeFileSync(filePath, JSON.stringify(results), (err) => {
+        if (err) {
+            console.error('Error writing file: ', err)
+        } else {
+            console.log('File created successfully')
+        }
+    })
 
     if (isArray(savedResults)) {
         console.log("array is array")
