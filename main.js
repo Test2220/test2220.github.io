@@ -1,4 +1,3 @@
-
 let savedResults = [];
 // localStorage.removeItem("Saved-Results");
 
